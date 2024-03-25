@@ -2,8 +2,19 @@
 module.exports = {
   content: ['./**/*.php'],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'sans': ['Manrope', 'sans-serif'],
+        'serif': ['Manrope', 'serif'],
+        'mono': ['Manrope', 'monospace'],
+        'display': ['Manrope', 'cursive'],
+        'body': ['Manrope', 'sans-serif'],
+      },
+    },
   },
-  plugins: [],
+  variants: {},
+  plugins: [
+    require('@tailwindcss/typography'),
+    // ...
+  ],
 }
-

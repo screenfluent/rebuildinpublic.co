@@ -9,3 +9,17 @@ Version: 1.0
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: 'Manrope';
+    src: url('/fonts/Manrope-VariableFont_wght.woff') format('woff');
+    font-weight: 100 900; /* This line indicates that the font supports a range of weights from 100 to 900 */
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    font-variation-settings: 'wght' 500;
+}
+
