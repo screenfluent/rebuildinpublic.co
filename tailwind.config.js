@@ -4,12 +4,14 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'sans': ['Manrope', 'sans-serif'],
-        'serif': ['Manrope', 'serif'],
-        'mono': ['Manrope', 'monospace'],
-        'display': ['Manrope', 'cursive'],
-        'body': ['Manrope', 'sans-serif'],
+        'sans': ['Manrope', 'Inter', 'sans-serif'],
       },
+      fontSize: {
+        '15': '15px',
+      },
+      colors: {
+        'custom-gray': '#444444',
+      }
     },
   },
   variants: {},
