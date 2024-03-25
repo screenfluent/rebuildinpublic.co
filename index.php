@@ -1,16 +1,26 @@
-<?php get_header();?>
-<br><br><br><br>
-<h1 class="font-bold text-2xl">Hello, world!</h1>
-<h1 class="font-semibold text-2xl">Hello, world!</h1>
+<?php get_header(); ?>
 
-<p class="font-normal">This is some body text.</p>
-<p class="text-sm">This is some body text sm.</p>
-<p class="text-base">This is some body text base.</p>
-<p class="text-15">This is some body text 15.</p>
+<div class="max-w-xl mx-auto p-5 pt-20">
+    <!-- Your content here -->
+    <div class="flex flex-col items-start">
+        <img class="w-12 h-12 rounded-full mb-4" src="https://framerusercontent.com/images/B0daymYlUsfgXpHo9PjmDZJv1sA.jpg" alt="Blog Logo">
+        <h1 class="text-2xl mb-4"><?php echo get_bloginfo('name'); ?></h1>
+        <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+    </div>
 
-<p class="text-gray-500 text-15">This is some body text 15.</p>
-<p class="text-gray-800 text-15">This is some body text 15.</p>
+    <?php
+    if ( have_posts() ) :
+        while ( have_posts() ) : the_post();
+            the_content();
+        endwhile;
+    endif;
+    ?>
 
-<p class="text-lg">This is some body text lg.</p>
+    <p class="text-gray-500 text-15">This is some body text 15.</p>
+    <p class="text-gray-800 text-15">This is some <a href="#" class="text-blue-500">body</a> text 15.</p>
 
-<?php get_footer();?>
+    <p class="text-lg">This is some body text lg.</p>
+
+
+<?php get_footer(); ?>
+</div>
