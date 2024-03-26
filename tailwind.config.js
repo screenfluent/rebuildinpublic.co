@@ -11,7 +11,11 @@ module.exports = {
       },
       colors: {
         'custom-gray': '#444444',
-      }
+        'border-gray': '#EEEEEE',
+      },
+      height: {
+        '1px': '1px',
+      },
     },
   },
   variants: {},
