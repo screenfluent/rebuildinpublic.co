@@ -46,3 +46,11 @@ body {
     color: #000; /* Change this to the color you want */
     font-weight: bold; /* Makes the text bold */
 }
+
+.post-meta {
+    font-size: 0.8em;
+    color: #666;
+}
+.post-content {
+    margin-top: 1em;
+}
